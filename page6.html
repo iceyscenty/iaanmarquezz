@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html>
 <head>
@@ -17,13 +16,11 @@
             color: white;
         }
 
-
         .overlay {
             background-color: rgba(10, 10, 30, 0.75);
             min-height: 100vh;
             padding-bottom: 50px;
         }
-
 
         header {
             background-color: #e3350d;
@@ -36,7 +33,6 @@
         header h1 {
             margin: 0;
             font-size: 45px;
-            color: white;
             text-shadow: 3px 3px #333;
         }
 
@@ -45,7 +41,6 @@
             color: #ffcb05;
             font-size: 18px;
         }
-
 
         .container {
             width: 80%;
@@ -71,7 +66,6 @@
             font-size: 18px;
             line-height: 1.6;
         }
-
 
         .pokemon-container {
             display: flex;
@@ -106,7 +100,6 @@
             font-size: 16px;
         }
 
-
         .type {
             display: inline-block;
             padding: 7px 15px;
@@ -127,10 +120,33 @@
             background-color: #3498db;
         }
 
+        .navigation {
+            text-align: center;
+            margin-top: 50px;
+        }
+
+        .navigation a {
+            display: inline-block;
+            background-color: #e3350d;
+            color: white;
+            text-decoration: none;
+            padding: 14px 30px;
+            margin: 5px;
+            border-radius: 30px;
+            font-weight: bold;
+            border: 3px solid #ffcb05;
+            transition: 0.3s;
+        }
+
+        .navigation a:hover {
+            background-color: #ffcb05;
+            color: #222;
+            transform: scale(1.08);
+        }
 
         footer {
             text-align: center;
-            margin-top: 50px;
+            margin-top: 40px;
             padding: 20px;
             color: #ccc;
         }
@@ -169,37 +185,36 @@
 
             <div class="pokemon-card">
                 <h3>⚡ Pikachu</h3>
-
                 <p>
                     One of the most famous Pokémon in the world!
                     Pikachu uses electricity to defeat its opponents.
                 </p>
-
                 <span class="type electric">Electric</span>
             </div>
 
             <div class="pokemon-card">
                 <h3>🔥 Charizard</h3>
-
                 <p>
                     A powerful Fire and Flying-type Pokémon
                     known for its incredible flames.
                 </p>
-
                 <span class="type fire">Fire</span>
             </div>
 
             <div class="pokemon-card">
                 <h3>💧 Squirtle</h3>
-
                 <p>
                     A cute Water-type Pokémon that can attack
                     enemies using powerful water moves.
                 </p>
-
                 <span class="type water">Water</span>
             </div>
 
+        </div>
+
+        <div class="navigation">
+            <a href="https://iceyscenty.github.io/iaanmarquezz/page5.html">⬅ Previous Page</a>
+            <a href="page6.html">Next Page ➡</a>
         </div>
 
     </div>
