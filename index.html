@@ -36,6 +36,37 @@
             font-size: 20px;
         }
 
+        .toc {
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            background-color: #1a142e;
+            border-bottom: 2px solid #a78bfa;
+            padding: 12px 0;
+            text-align: center;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+        }
+
+        .toc a {
+            display: inline-block;
+            background-color: #221a3d;
+            color: #c4b5fd;
+            text-decoration: none;
+            padding: 8px 16px;
+            margin: 4px;
+            border-radius: 20px;
+            font-weight: bold;
+            font-size: 15px;
+            border: 1px solid #4c3a7d;
+            transition: 0.3s;
+        }
+
+        .toc a:hover {
+            background-color: #a78bfa;
+            color: #0f0c1d;
+            transform: translateY(-2px);
+        }
+
         .container {
             width: 85%;
             max-width: 850px;
@@ -56,6 +87,31 @@
             color: #c4b5fd;
         }
 
+        .about-me {
+            background-color: #1a142e;
+            padding: 25px;
+            margin-bottom: 30px;
+            border: 1px solid #3a3358;
+            border-left: 5px solid #a78bfa;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
+        }
+
+        .about-me h2 {
+            color: #c4b5fd;
+        }
+
+        .profile-card {
+            background-color: #241d40;
+            padding: 15px;
+            border-radius: 8px;
+            margin: 10px 0;
+        }
+
+        .profile-card b {
+            color: #a78bfa;
+        }
+
         .hobby {
             background-color: #141c30;
             padding: 25px;
@@ -69,47 +125,18 @@
         .hobby h2 {
             color: #7cc0fb;
         }
-        
-        
-        .introduction {
-            backround-color: #141c30;
-            padding: 25px;
-            margin-bottom: 30px;
-            border: 2px solid #2b4468;
-            border-left: 10px solid #60a5fa;
-            border-radius: 15px;
-            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
-        }
-        
-        .introduction h2 {
-            color: #7cc0fb;
+
+        .hobby-card {
+            background-color: #1a2540;
+            padding: 15px 20px;
+            border-radius: 8px;
+            margin: 12px 0;
+            border-left: 3px solid #60a5fa;
         }
 
-        
-        
-
-        .picture {
-            background-color: #1a142e;
-            padding: 35px;
-            margin-top: 35px;
-            margin-bottom: 35px;
-            border: 1px solid #a78bfa;
-            border-radius: 12px;
-            text-align: center;
-            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
-        }
-
-        .picture h2 {
-            color: #c4b5fd;
-        }
-
-        .picture img {
-            width: 250px;
-            height: 250px;
-            object-fit: cover;
-            border: 3px solid #a78bfa;
-            border-radius: 12px;
-            box-shadow: 0 4px 20px rgba(167, 139, 250, 0.3);
+        .hobby-card h3 {
+            color: #93c5fd;
+            margin-top: 0;
         }
 
         .subject {
@@ -126,29 +153,18 @@
             color: #86efac;
         }
 
-        .profile {
-            background-color: #1a142e;
+        .introduction {
+            background-color: #141c30;
             padding: 25px;
             margin-bottom: 30px;
-            border: 1px solid #3a3358;
-            border-left: 5px solid #a78bfa;
-            border-radius: 12px;
+            border: 2px solid #2b4468;
+            border-left: 10px solid #60a5fa;
+            border-radius: 15px;
             box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
         }
 
-        .profile h2 {
-            color: #c4b5fd;
-            text-align: center;
-        }
-
-        .profile p {
-            background-color: #241d40;
-            padding: 10px;
-            border-radius: 6px;
-        }
-
-        p {
-            line-height: 1.7;
+        .introduction h2 {
+            color: #7cc0fb;
         }
 
         .navigation {
@@ -206,6 +222,10 @@
             border-top: 3px solid #a78bfa;
             color: #9d94b8;
         }
+
+        p {
+            line-height: 1.7;
+        }
     </style>
 </head>
 
@@ -216,131 +236,220 @@
         <p>Welcome to My Little World</p>
     </header>
 
+    <div class="toc">
+        <a href="#about">👤 About Me</a>
+        <a href="#hobbies">🎮 Hobbies</a>
+        <a href="#sports">⚽ Sports</a>
+        <a href="#games">🕹️ Games</a>
+        <a href="#chess">♟️ Chess</a>
+        <a href="#subjects">📚 Subjects</a>
+        <a href="#info">📋 More Info</a>
+    </div>
+
     <div class="container">
 
         <div class="welcome">
-            <h2>✨ !Welcome to My Website!</h2>
-
+            <h2>✨ Welcome to My Website!</h2>
             <p>
-                Hello! Welcome to my personal website.
-                This is where I share my hobbies, favorite
-                school subject, interests, and a little
-                information about myself.
-            </p>
-
-            <p>
-                I hope you enjoy exploring my website
-                and learning more about me!
+                Hey! I'm Ian, a 14-year-old student from 9-Galatians.
+                I love playing games, sports, and chess.
+                This is my little corner of the internet where I share
+                the things that make me, me. Enjoy exploring!
             </p>
         </div>
 
-        <div class="hobby">
-            <h2>🎮 My Favorite Hobby</h2>
+        <div class="about-me" id="about">
+            <h2>👤 About Me</h2>
+
+            <div class="profile-card">
+                <p><b>Name:</b> Ian Yvez M. Marquez</p>
+            </div>
+            <div class="profile-card">
+                <p><b>Age:</b> 14</p>
+            </div>
+            <div class="profile-card">
+                <p><b>Grade & Section:</b> 9-Galatians</p>
+            </div>
+            <div class="profile-card">
+                <p><b>Favorite Hobby:</b> Playing Games (Mobile Legends!)</p>
+            </div>
+            <div class="profile-card">
+                <p><b>Favorite Subject:</b> Mathematics</p>
+            </div>
+            <div class="profile-card">
+                <p><b>Sports I Play:</b> Basketball, Badminton, Soccer</p>
+            </div>
+            <div class="profile-card">
+                <p><b>Other Interests:</b> Chess, Gaming</p>
+            </div>
 
             <p>
-                My favorite hobby is playing games.
-                I enjoy gaming because it is fun and
-                entertaining. It helps me relax during
-                my free time.
-            </p>
-
-            <p>
-                I also enjoy exploring different games,
-                learning new strategies, improving my
-                skills, and sometimes playing with friends.
+                I'm a student who enjoys a lot of things — from solving
+                math problems to competing in Mobile Legends, from shooting
+                hoops to playing chess. I always try to learn something new
+                and push myself to get better at what I do.
             </p>
         </div>
 
-        <div class="picture">
-            <h2>📸 MY PICTURE</h2>
+        <div class="hobby" id="hobbies">
+            <h2>🎮 My Hobbies</h2>
 
-            <p>Here's a picture of me!</p>
+            <div class="hobby-card">
+                <h3>🕹️ Gaming</h3>
+                <p>
+                    My favorite hobby is playing games, especially
+                    <b>Mobile Legends</b>. I love the thrill of competing
+                    against other players, learning new hero strategies,
+                    and climbing the rank ladder. It's my go-to way to
+                    relax and have fun after a long day at school.
+                </p>
+            </div>
 
-            <img src="my-picture.jpg" alt="My Picture">
+            <div class="hobby-card">
+                <h3>♟️ Chess</h3>
+                <p>
+                    I also enjoy playing chess. It's not just a game —
+                    it helps me think critically and plan ahead. Every
+                    move matters, and I like the challenge of outsmarting
+                    my opponent. It sharpens my mind and keeps me focused.
+                </p>
+            </div>
 
-            <p><i>A little picture of myself.</i></p>
+            <div class="hobby-card">
+                <h3>📺 Watching Sports & Esports</h3>
+                <p>
+                    When I'm not playing, I enjoy watching basketball games
+                    and Mobile Legends esports tournaments. Seeing pro players
+                    make amazing plays motivates me to improve my own skills.
+                </p>
+            </div>
         </div>
 
-        <div class="subject">
+        <div class="hobby" id="sports">
+            <h2>⚽ Sports I Play</h2>
+
+            <div class="hobby-card">
+                <h3>🏀 Basketball</h3>
+                <p>
+                    Basketball is one of my favorite sports. I love the
+                    fast pace, the teamwork, and the feeling of making
+                    a good shot. Playing helps me stay active and build
+                    physical strength. I always give my best on the court.
+                </p>
+            </div>
+
+            <div class="hobby-card">
+                <h3>🏸 Badminton</h3>
+                <p>
+                    Badminton is fast and fun. I like how quick the
+                    rallies can get — it tests my reflexes, speed,
+                    and accuracy. It's a great workout and really
+                    enjoyable to play with friends.
+                </p>
+            </div>
+
+            <div class="hobby-card">
+                <h3>⚽ Soccer</h3>
+                <p>
+                    Soccer is an exciting sport that keeps me running
+                    and thinking at the same time. I enjoy the teamwork
+                    and strategy involved. Whether it's a casual game
+                    or a serious match, I always have fun on the field.
+                </p>
+            </div>
+        </div>
+
+        <div class="hobby" id="games">
+            <h2>🕹️ Games I Play</h2>
+
+            <div class="hobby-card">
+                <h3>📱 Mobile Legends (ML)</h3>
+                <p>
+                    Mobile Legends is my main game! I love picking
+                    different heroes, learning their skills, and
+                    working with my team to destroy the enemy base.
+                    Every match is different and that's what makes
+                    it so exciting. I'm always trying to rank up
+                    and improve my gameplay.
+                </p>
+            </div>
+
+            <div class="hobby-card">
+                <h3>♟️ Chess (Online & Offline)</h3>
+                <p>
+                    I play chess both on a real board and online.
+                    Online chess is great because I can play against
+                    people from anywhere, anytime. It helps me
+                    practice different openings and strategies.
+                </p>
+            </div>
+        </div>
+
+        <div class="subject" id="chess">
+            <h2>♟️ Why I Love Chess</h2>
+
+            <p>
+                Chess is more than just a board game to me. It teaches
+                patience, critical thinking, and how to stay calm under
+                pressure. Every game is a battle of minds, and I love
+                the feeling of finding a winning move after thinking
+                deeply. It also helps me in real life — especially in
+                school when I need to solve problems carefully.
+            </p>
+
+            <p>
+                I like studying different openings, practicing tactics,
+                and learning from my mistakes. The more I play, the
+                better I get, and that's what keeps me coming back.
+            </p>
+        </div>
+
+        <div class="subject" id="subjects">
             <h2>📚 My Favorite School Subject</h2>
 
             <p>
-                My favorite school subject is Mathematics.
-                I enjoy solving problems, learning formulas,
-                and understanding how numbers work.
+                My favorite subject is <b>Mathematics</b>. I enjoy
+                solving problems, working with formulas, and
+                understanding how numbers work. Math challenges me
+                to think logically and carefully.
             </p>
 
             <p>
-                Math helps me develop my logical thinking
-                and problem-solving skills. Even when a
-                problem is difficult, it feels rewarding
-                when I finally understand the answer.
+                Even when a problem is tough, it feels amazing when
+                I finally figure out the answer. Math also helps me
+                in gaming and chess — both need quick calculation
+                and smart decision-making.
             </p>
         </div>
 
-        <div class="profile">
-            <h2>👤 MY PERSONAL PROFILE</h2>
-
-            <p><b>Name:</b> Ian Yvez M. Marquez</p>
-
-            <p><b>Age:</b> 14</p>
-
-            <p><b>Grade and Section:</b> 9-Galatians</p>
-
-            <p><b>Favorite Hobby:</b> Playing Games</p>
-
-            <p><b>Favorite Subject:</b> Mathematics</p>
-
-            <p><b>Other Interests:</b> Basketball</p>
-
-            <p><b>About Me:</b></p>
+        <div class="introduction" id="info">
+            <h2>📋 More About Me</h2>
 
             <p>
-                I am a student who enjoys playing games
-                and learning new things. I like spending
-                my free time doing activities that interest
-                me. I also enjoy Mathematics because I like
-                solving problems and challenging myself.
-                I always try to learn something new and
-                improve my skills.
+                Here are some extra things about me: I like playing
+                chess because it helps with critical thinking. I play
+                basketball a lot because it builds physical strength.
+                I enjoy badminton and soccer too because they're fun
+                and keep me active. And of course, I love playing
+                Mobile Legends — it's my favorite way to unwind and
+                have a good time.
             </p>
-            
-            
-            <div class="introduction">
-                
-                <p>HELLO</p>
-                
-            </div>
-            
-            
+
+            <p>
+                Whether it's on the court, on the field, over the
+                board, or on my phone — I'm always doing something
+                I enjoy. I believe that having different interests
+                makes life more exciting and helps me grow as a person.
+            </p>
         </div>
 
         <div class="navigation">
-
-            <a href="https://iceyscenty.github.io/iaanmarquezz/page2.html">
-                &#8592; Page 2
-            </a>
-
-            <a href="https://iceyscenty.github.io/iaanmarquezz/page3.html">
-                Page 3 &#8594;
-            </a>
-
-            <a href="https://iceyscenty.github.io/iaanmarquezz/page4.html">
-                &#8592; Page 4
-            </a>
-
-            <a href="https://iceyscenty.github.io/iaanmarquezz/page5.html">
-                Page 5 &#8594;
-            </a>
-
-            <a href="https://iceyscenty.github.io/iaanmarquezz/page6.html">
-                &#8592; Page 6
-            </a>
-
-            <a href="https://iceyscenty.github.io/iaanmarquezz/page7.html">
-                Page 7 &#8594;
-            </a>
-
+            <a href="https://iceyscenty.github.io/iaanmarquezz/page2.html">&#8592; Page 2</a>
+            <a href="https://iceyscenty.github.io/iaanmarquezz/page3.html">Page 3 &#8594;</a>
+            <a href="https://iceyscenty.github.io/iaanmarquezz/page4.html">&#8592; Page 4</a>
+            <a href="https://iceyscenty.github.io/iaanmarquezz/page5.html">Page 5 &#8594;</a>
+            <a href="https://iceyscenty.github.io/iaanmarquezz/page6.html">&#8592; Page 6</a>
+            <a href="https://iceyscenty.github.io/iaanmarquezz/page7.html">Page 7 &#8594;</a>
         </div>
 
         <div class="top-button">
