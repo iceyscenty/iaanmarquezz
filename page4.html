@@ -10,39 +10,34 @@
 
         body {
             background-color: #f2f2f2;
-            margin: 20px;
+            margin: 0;
         }
 
-                .navigation {
+        header {
+            background-color: #1e3a5f;
             text-align: center;
-            margin-top: 50px;
+            padding: 20px;
+            border-bottom: 3px solid orange;
         }
 
-        .navigation a {
-            display: inline-block;
-            background-color: #e3350d;
-            color: white;
-            text-decoration: none;
-            padding: 14px 25px;
-            margin: 5px;
-            border-radius: 12px;
-            font-weight: bold;
-            border: 3px solid #ffcb05;
-            box-shadow: 0 4px 0 #9e2509;
-            transition: 0.3s;
+        header h2 {
+            margin: 0;
+            color: orange;
+            font-size: 22px;
+            letter-spacing: 2px;
         }
 
-        .navigation a:hover {
-            background-color: #ffcb05;
-            color: #222;
-            transform: translateY(-4px);
-            box-shadow: 0 6px 12px rgba(255, 203, 5, 0.4);
+        header p {
+            margin: 6px 0 0 0;
+            color: #ccc;
+            font-size: 15px;
         }
 
         h1 {
             color: orange;
             text-align: center;
             font-size: 40px;
+            margin-top: 20px;
         }
 
         h2 {
@@ -77,10 +72,56 @@
             color: blue;
             font-size: 18px;
         }
+
+        .navigation {
+            text-align: center;
+            margin-top: 50px;
+        }
+
+        .navigation a {
+            display: inline-block;
+            background-color: #e3350d;
+            color: white;
+            text-decoration: none;
+            padding: 14px 25px;
+            margin: 5px;
+            border-radius: 12px;
+            font-weight: bold;
+            border: 3px solid #ffcb05;
+            box-shadow: 0 4px 0 #9e2509;
+            transition: 0.3s;
+        }
+
+        .navigation a:hover {
+            background-color: #ffcb05;
+            color: #222;
+            transform: translateY(-4px);
+            box-shadow: 0 6px 12px rgba(255, 203, 5, 0.4);
+        }
+
+        footer {
+            background-color: #1e3a5f;
+            text-align: center;
+            padding: 20px;
+            margin-top: 40px;
+            border-top: 3px solid orange;
+            color: #ccc;
+        }
+
+        footer p {
+            margin: 4px 0;
+            font-size: 14px;
+        }
     </style>
 </head>
 
 <body>
+
+    <!-- HEADER -->
+    <header>
+        <h2>🏀 Stephen Curry — Basketball Legend 🏀</h2>
+        <p>Golden State Warriors | #30 | NBA Champion</p>
+    </header>
 
     <h1>Stephen Curry</h1>
 
@@ -155,13 +196,16 @@
         Visit LMS
     </a>
 
-        <div class="navigation">
-            <a href="https://iceyscenty.github.io/iaanmarquezz/page3.html">⬅ Previous Page</a>
-            <a href="https://iceyscenty.github.io/iaanmarquezz/page5.html">Next Page ➡</a>
-        </div>
-
+    <div class="navigation">
+        <a href="https://iceyscenty.github.io/iaanmarquezz/page3.html">⬅ Previous Page</a>
+        <a href="https://iceyscenty.github.io/iaanmarquezz/page5.html">Next Page ➡</a>
     </div>
+
+    <!-- FOOTER -->
+    <footer>
+        <p>🏀 Stephen Curry — Basketball Legend</p>
+        <p>Created by Ian Marquez | 2026</p>
+    </footer>
+
 </body>
 </html>
-
-
